@@ -1,0 +1,33 @@
+{% extends 'dashboard/base.html' %} 
+{% load static %} 
+{% block content %}
+
+<!--1)Title ди узгартирса боладигон килиш
+    2) Notes ларди узини узгартиришди кошиш
+    3)Карталарди уртасидеги жойди сал каттайтириш
+    4)Notes Added from admin Successfully! рангли чикмайапти
+    5)Формани толдиргандан кегин эски запись учиб кетмайапти
+ -->>
+
+<section class='text-center container'>
+
+    <div class="container">
+
+        <div class="content-section p-0 mt-5">
+
+            <div class="m-3">
+                <h2> {{notes.title}} </h2>
+            </div>
+            
+            <hr class="p-0 m-0">
+            <p class="description m-5 p-5">
+                {{notes.description}}
+            </p>
+            <hr>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock content %}
